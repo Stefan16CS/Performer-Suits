@@ -1,0 +1,71 @@
+/* Hero section */
+
+.homepage-main-container {
+  height: 100vh;
+  background-image: url("/wp-content/themes/performer-suits-theme/assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 961px;
+  src: url("/wp-content/themes/performer-suits-theme/assets/images/vertical-divider.png");
+  background:
+    linear-gradient(45deg, rgba(33, 30, 28, 0.8) 0%, rgba(0, 0, 0, 0) 100%),
+    url("/wp-content/themes/performer-suits-theme/assets/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.homepage-main-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 288px;
+  top: 0;
+  width: 2px;
+  height: 1144px;
+  background-image: url("/wp-content/themes/performer-suits-theme/assets/images/vertical-divider.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homepage-content {
+  text-align: left;
+  color: #fcfbf8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 384px;
+  padding-top: 500px;
+  padding-right: 750px;
+}
+
+.homepage-title {
+  font-size: 74px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  align-content: center;
+  letter-spacing: 0%;
+  margin-top: -3.44px;
+  margin-bottom: 0px;
+}
+
+.homepage-description {
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: -2%;
+  margin-bottom: 20px;
+}
+
+.homepage-button {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  background-color: #9d7f67;
+  color: #fcfbf8;
+  padding: 14px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 24%;
+}

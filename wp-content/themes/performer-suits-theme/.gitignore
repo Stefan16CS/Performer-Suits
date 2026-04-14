@@ -1,0 +1,21 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+
+# Uploads (slike i fajlovi)
+/wp-content/uploads/
+
+# Cache
+/wp-content/cache/
+
+# Node / Composer
+/node_modules/
+/vendor/
+
+# Config
+wp-config.php
+.env
+
+# OS
+.DS_Store
+Thumbs.db
