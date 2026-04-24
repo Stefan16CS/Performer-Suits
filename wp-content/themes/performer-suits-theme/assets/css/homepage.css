@@ -1,30 +1,30 @@
+/* ------------------Vertical divider--------------------- */
+.homepage-main-container::before,
+.homepage-benefits-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  background-color: var(--divider-color);
+  /*height: 1437px;*/
+  z-index: 2;
+}
+/*---------------------------------------------------------*/
+
 /* Hero section */
 
 .homepage-main-container {
   height: 100vh;
-  background-image: url("/wp-content/themes/performer-suits-theme/assets/images/hero-background.png");
-  background-size: cover;
-  background-position: center;
   min-height: 961px;
-  src: url("/wp-content/themes/performer-suits-theme/assets/images/vertical-divider.png");
   background:
     linear-gradient(45deg, rgba(33, 30, 28, 0.8) 0%, rgba(0, 0, 0, 0) 100%),
     url("/wp-content/themes/performer-suits-theme/assets/images/hero-background.png");
   background-size: cover;
   background-position: center;
-}
-
-.homepage-main-container::before {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 288px;
-  top: 0;
-  width: 2px;
-  height: 1144px;
-  background-image: url("/wp-content/themes/performer-suits-theme/assets/images/vertical-divider.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
 }
 
 .homepage-content {
@@ -68,4 +68,328 @@
   border-radius: 2px;
   cursor: pointer;
   width: 24%;
+}
+
+/* Benefits section */
+
+.homepage-benefits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1430px;
+  background-color: #37322f;
+  position: relative;
+}
+
+.homepage-benefits-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  background-color: #423c38;
+  height: 1245px;
+  min-height: auto;
+  box-shadow:
+    23px 19px 18px rgba(0, 0, 0, 0.05),
+    10px 8px 13px rgba(0, 0, 0, 0.08),
+    3px 2px 7px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+.homepage-benefits-title {
+  font-size: 55px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  margin-top: 93px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fcfbf8;
+}
+
+.homepage-benefits-list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  height: 80px;
+  padding-inline-start: 0;
+}
+
+.homepage-benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 181px;
+}
+
+.benefit-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fcfbf8;
+}
+
+.homepage-about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 982px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(0, 0, 0, 0.35) 85%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(55, 50, 47, 1),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    url("/wp-content/themes/performer-suits-theme/assets/images/about-background.webp");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homepage-about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  height: 96px;
+  background-color: var(--divider-color);
+  z-index: 2;
+}
+
+.homepage-about-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  height: 210px;
+  background-color: var(--divider-color);
+  z-index: 2;
+}
+
+.homepage-about-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--divider-x);
+  margin-top: 96px;
+  margin-bottom: 163px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  justify-content: space-between;
+  min-height: 732px;
+  width: 663px;
+  box-sizing: border-box;
+}
+
+.homepage-about-subtitle {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 400;
+  font-family: Helvetica;
+  letter-spacing: 1.5px;
+  color: #fcfbf8;
+  width: 91px;
+  height: 29px;
+  padding: 6px 12px;
+  background-color: #4d4542;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.homepage-about-title {
+  font-size: 82px;
+  line-height: 88px;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #fcfbf8;
+  width: 544px;
+}
+
+.homepage-about-description {
+  font-size: 24px;
+  line-height: 39px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  color: #fcfbf8;
+  width: 663px;
+  max-width: 100%;
+}
+
+.homepage-about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  background-color: #9d7f67;
+  color: #fcfbf8;
+  padding: 12px 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 194px;
+  height: 48px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  gap: 12px;
+}
+
+/* Testimonials section */
+
+.homepage-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 508px;
+  background-color: #d9d2c4;
+  position: relative;
+  /*Overflow-x is here hidden, because we wait for JS*/
+  overflow-x: hidden;
+}
+
+.homepage-testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  min-height: 316px;
+}
+
+/*When Javascript would be available implement smooth scrolling*/
+.homepage-testimonials-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+  margin-top: 32px;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.homepage-testimonials-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.homepage-testimonials-nav-item {
+  flex: 0 0 auto;
+  text-align: center;
+  cursor: pointer;
+  font-family:
+    book antiqua,
+    serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  color: #858585;
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
+.homepage-testimonials-viewport {
+  width: 100%;
+  min-height: 316px;
+  overflow: hidden;
+}
+
+.homepage-testimonials-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 316px;
+}
+
+.homepage-testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1536px;
+  justify-content: center;
+}
+
+.homepage-testimonial-quote {
+  font-family:
+    Book Antiqua,
+    serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  color: #211e1c;
+  text-align: center;
+  /*max-width: 800px;*/
+  margin: auto;
+}
+
+.homepage-testimonials-nav-item.is-active {
+  border-bottom: 2px solid #9d7f67;
+  color: #040706;
+}
+
+/* Second panel is hidden for now*/
+#testimonial-panel-2 {
+  display: none;
+}
+
+.homepage-testimonial-actions {
+  display: flex;
+  width: auto;
+  height: 48px;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px #6e635e;
+  padding: 12px 18px;
+  gap: 10px;
+}
+
+.homepage-testimonial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #211e1c;
+  text-decoration: none;
+}
+
+.btn-icon {
+  display: flex;
 }
