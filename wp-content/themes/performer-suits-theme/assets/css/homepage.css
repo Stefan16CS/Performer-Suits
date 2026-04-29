@@ -393,3 +393,441 @@
 .btn-icon {
   display: flex;
 }
+
+/* Products section */
+
+.homepage-products-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 1194px;
+  background-color: #ede8de;
+  position: relative;
+  align-items: flex-start;
+}
+
+.homepage-products-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  background-color: #d2cabc;
+  z-index: 2;
+}
+
+.homepage-products-heading {
+  max-width: 700px;
+  width: 100%;
+  min-height: 173px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: calc(var(--divider-x) + 96px);
+}
+
+.homepage-products-title {
+  font-size: 75px;
+  line-height: 84px;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.homepage-products-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 96px;
+  width: 100%;
+}
+
+.homepage-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 1536px;
+  min-height: 690px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 63px;
+  justify-content: center;
+}
+
+.homepage-product-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 690px;
+  z-index: 3;
+  background-color: #e0dacc;
+  position: relative;
+  overflow: visible;
+}
+
+.homepage-product-label {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-title {
+  font-family:
+    book antiqua,
+    serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #211e1c;
+  text-align: left;
+  margin: 0;
+}
+
+.product-description {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #211e1c;
+  text-align: left;
+}
+
+.homepage-products-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  color: #211e1c;
+  padding: 7px 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  line-height: 10px;
+  letter-spacing: 0%;
+  box-shadow: inset 0 0 0 1px #6e635e;
+  gap: 5px;
+  min-width: 93px;
+  max-height: 26px;
+}
+
+/* Adding pseudo-elements for badge */
+.homepage-product-item.has-badge::after {
+  content: "NOVO";
+  position: absolute;
+  top: 31px;
+  left: 31px;
+  background-color: #e7e1d5;
+  color: #211e1c;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-family: Helvetica, sans-serif;
+  border-radius: 50px;
+  z-index: 4;
+}
+
+/* Process section */
+.homepage-process-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 982px;
+  background-color: #cbbdb9;
+  position: relative;
+}
+
+.homepage-process-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  background-color: #231a1a;
+  z-index: 2;
+}
+
+.homepage-process-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+.homepage-process-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 78px;
+  width: 100%;
+  gap: 96px;
+  margin-left: calc(var(--divider-x) + 96px);
+  width: calc(100% - (var(--divider-x) + 96px));
+  box-sizing: border-box;
+}
+
+.homepage-process-title {
+  font-size: 83px;
+  line-height: 88px;
+  font-weight: normal;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #231a1a;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 528px;
+  max-height: 176px;
+}
+
+.homepage-process-description {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  color: #231a1a;
+  width: 100%;
+  max-width: 566px;
+  margin: 0;
+}
+
+/*-----------Cards------------*/
+
+.homepage-process-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  max-width: 1536px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*First card*/
+
+.homepage-process-card-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 67px;
+  width: 100%;
+  max-width: 1075px;
+  min-height: 462px;
+  margin-top: 90px;
+  border-radius: 2px;
+  background-color: #d1c5c1;
+  box-shadow:
+    23px 19px 18px rgba(0, 0, 0, 0.05),
+    10px 8px 13px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.homepage-process-title-container-1 {
+  flex: 0 0 436px;
+}
+
+.process-image-1 {
+  flex: 0 0 auto;
+}
+
+.highlight-background-1 {
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  width: calc(100% + 20px);
+  height: 1.05em;
+  transform: translateY(-50%) scale(1.3, 1.3);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.process-title-1 {
+  font-size: 39px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  font-weight: normal;
+  font-family: "Book Antiqua", serif;
+  color: #231a1a;
+}
+
+/*Second card*/
+
+.homepage-process-card-second {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 76px;
+  width: 100%;
+  max-width: 1228px;
+  min-height: 528px;
+  margin-top: 248px;
+  border-radius: 2px;
+  background-color: #ded6d3;
+  box-shadow:
+    23px 19px 18px rgba(0, 0, 0, 0.05),
+    10px 8px 13px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.homepage-process-title-container-2 {
+  flex: 0 0 499px;
+}
+
+.homepage-process-title-container-2 .process-title {
+  max-width: 415px;
+}
+
+.process-image-2 {
+  flex: 0 0 auto;
+}
+
+.highlight-background-2 {
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  width: calc(100% + 20px);
+  height: 1.05em;
+  transform: translateY(-55%) scale(1.4, 1.3);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.process-title-2 {
+  font-size: 43px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  font-weight: normal;
+  font-family: "Book Antiqua", serif;
+  color: #231a1a;
+}
+
+/*Third card*/
+
+.homepage-process-card-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  width: 100%;
+  max-width: 1382px;
+  min-height: 594px;
+  margin-top: 272px;
+  border-radius: 2px;
+  background-color: #ebe6e5;
+  box-shadow:
+    23px 19px 18px rgba(0, 0, 0, 0.05),
+    10px 8px 13px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.homepage-process-title-container-3 {
+  flex: 0 0 562px;
+}
+
+.homepage-process-title-container-3 .process-title {
+  max-width: 470px;
+}
+
+.process-image-3 {
+  flex: 0 0 auto;
+}
+
+.highlight-background-3 {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  width: calc(100% + 20px);
+  height: 1.05em;
+  transform: translateY(-55%) scale(1.45, 1.4);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.process-title-3 {
+  font-size: 47px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  font-weight: normal;
+  font-family: "Book Antiqua", serif;
+  color: #231a1a;
+}
+
+/*Fourth card*/
+
+.homepage-process-card-fourth {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  width: 100%;
+  max-width: var(--global-width-boxed-1);
+  min-height: 660px;
+  margin-top: 206px;
+  margin-bottom: 96px;
+  border-radius: 2px;
+  background-color: #f8f7f6;
+  box-shadow:
+    23px 19px 18px rgba(0, 0, 0, 0.05),
+    10px 8px 13px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.homepage-process-title-container-4 {
+  flex: 0 0 624px;
+}
+
+.process-image-4 {
+  flex: 0 0 auto;
+}
+
+.highlight-background-4 {
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  width: calc(100% + 20px);
+  height: 1.05em;
+  transform: translateY(-50%) scale(1.4, 1.4);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.process-title-4 {
+  font-size: 53px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  font-weight: normal;
+  font-family: "Book Antiqua", serif;
+  color: #231a1a;
+}
+
+/*Settings for all cards*/
+
+.process-highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.process-highlight-text {
+  position: relative;
+  z-index: 2;
+}

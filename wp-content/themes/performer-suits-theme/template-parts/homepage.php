@@ -209,3 +209,112 @@ get_header();
         </div>
     </div>
 </section>
+
+
+<!-- Products section -->
+<section class="homepage-products-container page-width-full">
+    <div class="homepage-products-heading">
+        <h2 class="homepage-products-title">Naša ponuda proizvoda</h2>
+    </div>
+    <div class="homepage-products-content page-width-boxed-1">
+        <div class="homepage-products-grid">
+            <div class="homepage-product-item">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/odela.png" alt="Product 1" class="product-image">
+                <div class="homepage-product-label">
+                    <h3 class="product-title">Odela</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur. Non mauris purus augue euismod nibh justo enim lutpat amet.</p>
+                    <button class="homepage-products-button">
+                        Saznaj više
+                        <span class="btn-icon">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                                    stroke="#000000"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="homepage-product-item">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/prsluci.png" alt="Product 2" class="product-image">
+                <div class="homepage-product-label">
+                    <h3 class="product-title">Prsluci</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur. Non mauris purus augue euismod nibh justo enim lutpat amet.</p>
+                    <button class="homepage-products-button">
+                        Saznaj više
+                        <span class="btn-icon">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                                    stroke="#000000"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="homepage-product-item has-badge">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/kaputi.png" alt="Product 3" class="product-image">
+                <div class="homepage-product-label">
+                    <h3 class="product-title">Kaputi</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur. Non mauris purus augue euismod nibh justo enim lutpat amet.</p>
+                    <button class="homepage-products-button">
+                        Saznaj više
+                        <span class="btn-icon">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                                    stroke="#000000"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Process section -->
+<section class="homepage-process-container page-width-full">
+    <div class="homepage-process-content page-width-boxed-1">
+        <div class="homepage-process-heading">
+            <h2 class="homepage-process-title">Tvoje odelo. Tvoja pravila.</h2>
+            <p class="homepage-process-description">Personalizuj svaki aspekt svog odela - od kraja do završnih detalja, stvori odelo koje te ističe. Neka tvoje odelo bude odraz tvoje ličnosti.</p>
+        </div>
+        <div class="homepage-process-cards">
+            <article class="homepage-process-card-first">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/process1.png" alt="Process Step 1" class="process-image-1">
+                <div class="homepage-process-title-container-1">
+                    <h3 class="process-title-1">Biramo <span class="process-highlight"><img src="/wp-content/themes/performer-suits-theme/assets/images/homepage-process-orange.svg" alt="" class="highlight-background-1"><span class="process-highlight-text">kroj,</span></span> tkaninu i detalje po vašem ukusu.</h3>
+                </div>
+            </article>
+            <article class="homepage-process-card-second">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/process2.png" alt="Process Step 2" class="process-image-2">
+                <div class="homepage-process-title-container-2">
+                    <h3 class="process-title-2">Precizno uzimamo<span class="process-highlight"><img src="/wp-content/themes/performer-suits-theme/assets/images/homepage-process-green.svg" alt="" class="highlight-background-2"><span class="process-highlight-text">Vaše mere</span></span> kako bismo osigurali savršen kroj.</h3>
+                </div>
+            </article>
+            <article class="homepage-process-card-third">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/process3.png" alt="Process Step 3" class="process-image-3">
+                <div class="homepage-process-title-container-3">
+                    <h3 class="process-title-3"><span class="process-highlight"><span class="process-highlight-text"><img src="/wp-content/themes/performer-suits-theme/assets/images/homepage-process-orange-2.svg" alt="" class="highlight-background-3">Krojimo</span></span> i šijemo po meri sa pažnjom svaki detalj.</h3>
+                </div>
+            </article>
+            <article class="homepage-process-card-fourth">
+                <img src="/wp-content/themes/performer-suits-theme/assets/images/process4.png" alt="Process Step 4" class="process-image-4">
+                <div class="homepage-process-title-container-4">
+                    <h3 class="process-title-4">Finalna proba i dorade dok sve ne bude <span class="process-highlight"><img src="/wp-content/themes/performer-suits-theme/assets/images/homepage-process-green-2.svg" alt="" class="highlight-background-4"><span class="process-highlight-text">savršeno</span></span>.</h3>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
