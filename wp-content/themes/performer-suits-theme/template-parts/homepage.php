@@ -202,7 +202,8 @@ get_header();
                                         stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                            </span></a>
+                            </span>
+                        </a>
                     </div>
                 </article>
             </div>
@@ -212,6 +213,7 @@ get_header();
 
 
 <!-- Products section -->
+
 <section class="homepage-products-container page-width-full">
     <div class="homepage-products-heading">
         <h2 class="homepage-products-title">Naša ponuda proizvoda</h2>
@@ -284,6 +286,7 @@ get_header();
 
 
 <!-- Process section -->
+
 <section class="homepage-process-container page-width-full">
     <div class="homepage-process-content page-width-boxed-1">
         <div class="homepage-process-heading">
@@ -315,6 +318,62 @@ get_header();
                     <h3 class="process-title-4">Finalna proba i dorade dok sve ne bude <span class="process-highlight"><img src="/wp-content/themes/performer-suits-theme/assets/images/homepage-process-green-2.svg" alt="" class="highlight-background-4"><span class="process-highlight-text">savršeno</span></span>.</h3>
                 </div>
             </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA section -->
+
+<section>
+    <div class="homepage-cta-container page-width-full">
+        <div class="homepage-cta-header">
+            <h2 class="homepage-cta-title">Kada želiš više od odela</h2>
+            <p class="homepage-cta-description">Kreiramo odela po meri koja pričaju tvoju priču - elegantna, udobna i potpuno personalizovana, za svaki važan trenutak u životu.</p>
+        </div>
+        <div class="homepage-cta-actions">
+            <a href="#" class="homepage-cta-link">Zakaži merenje kod nas
+                <span class="homepage-cta-button-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M7 17L17 7M17 7H9M17 7V15"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Workshop section -->
+
+<section>
+    <div class="homepage-workshop-container page-width-full">
+        <div class="homepage-workshop-content-top">
+            <img class="homepage-workshop-image-top" src="/wp-content/themes/performer-suits-theme/assets/images/workshop.png" alt="Workshop Image">
+            <div class="homepage-workshop-header-top">
+                <h2 class="homepage-workshop-title">Zaviri u našu radionicu</h2>
+                <p class="homepage-workshop-description-top">Tu svakodnevno kombinujemo tradiciju i savremene tehnike kako bismo kreirali odela koja ne samo da savršeno pristaju, već i pričaju priču o stilu i eleganciji.</p>
+
+                <div class="homepage-workshop-actions">
+                    <a href="#" class="homepage-workshop-link">Vidi galeriju
+                        <span class="homepage-workshop-button-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="homepage-workshop-content-bottom">
+            <img class="homepage-workshop-image-bottom" src="/wp-content/themes/performer-suits-theme/assets/images/workshop2.png" alt="Workshop Image">
+            <div class="homepage-workshop-header-bottom">
+                <h2 class="homepage-workshop-title">Kvalitet i posvećenosti</h2>
+                <p class="homepage-workshop-description-bottom">Kvalitet je u temelju svega što radimo. Svaki komad je rezultat naše posvećenosti i pažnje prema detaljima, jer verujemo da savršeno odelo mora biti ne samo lepo, već i dugotrajno.</p>
+            </div>
         </div>
     </div>
 </section>

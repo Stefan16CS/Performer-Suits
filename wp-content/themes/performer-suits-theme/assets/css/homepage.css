@@ -394,6 +394,22 @@
   display: flex;
 }
 
+.homepage-testimonial-link:hover {
+  color: #211e1c;
+}
+
+.homepage-testimonial-link:visited {
+  color: #211e1c;
+}
+
+.homepage-testimonial-link:focus {
+  color: #211e1c;
+}
+
+.homepage-cta-button-icon {
+  display: flex;
+}
+
 /* Products section */
 
 .homepage-products-container {
@@ -830,4 +846,258 @@
 .process-highlight-text {
   position: relative;
   z-index: 2;
+}
+
+/* CTA section */
+
+.homepage-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 1200px;
+  background-color: #231a1a;
+  position: relative;
+  background-image:
+    linear-gradient(to bottom, rgba(39, 33, 33, 0.9), rgba(0, 0, 0, 0)),
+    url("/wp-content/themes/performer-suits-theme/assets/images/cta-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.homepage-cta-container::before {
+  content: "";
+  position: absolute;
+  top: 578px;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  /*height: 96px;*/
+  background-color: var(--divider-color);
+  z-index: 2;
+}
+
+.homepage-cta-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--divider-x);
+  box-sizing: border-box;
+  padding-top: 178px;
+}
+
+.homepage-cta-title {
+  font-size: 82px;
+  line-height: 88px;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  width: 480px;
+  margin: 0px;
+}
+
+.homepage-cta-description {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-right: 46px;
+  font-size: 24px;
+  line-height: 33.6px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  width: 480px;
+}
+
+.homepage-cta-actions {
+  margin-left: var(--divider-x);
+  display: flex;
+  width: auto;
+  height: 48px;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px #6e635e;
+  padding: 12px 18px;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.homepage-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  text-decoration: none;
+}
+
+.homepage-cta-link:hover {
+  color: #f7f8f7;
+}
+
+.homepage-cta-link:visited {
+  color: #f7f8f7;
+}
+
+.homepage-cta-link:focus {
+  color: #f7f8f7;
+}
+
+.homepage-cta-button-icon {
+  display: flex;
+}
+
+/* Workshop section */
+
+.homepage-workshop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1632px;
+  background-color: #2f372f;
+  position: relative;
+  align-items: flex-start;
+}
+
+.homepage-workshop-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--divider-x);
+  width: var(--divider-width);
+  background-color: #5f6d5f;
+  z-index: 2;
+}
+
+.homepage-workshop-content-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 96px;
+  min-height: 316px;
+  box-sizing: border-box;
+  gap: 192px;
+}
+
+.homepage-workshop-content-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 96px;
+  min-height: 316px;
+  box-sizing: border-box;
+  gap: 192px;
+  padding-left: var(--divider-x);
+}
+
+.homepage-workshop-image-top {
+  min-height: 720px;
+  min-width: 720px;
+  z-index: 3;
+  border-radius: 2px;
+  margin-left: 192px;
+  margin-top: 96px;
+}
+
+.homepage-workshop-image-bottom {
+  min-height: 720px;
+  min-width: 720px;
+  z-index: 3;
+  border-radius: 2px;
+  margin-right: 192px;
+  margin-top: 96px;
+}
+
+.homepage-workshop-header-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.homepage-workshop-header-bottom {
+  background-color: #2f372f;
+  z-index: 3;
+  min-height: 394px;
+  padding-top: 69px;
+  padding-bottom: 36px;
+  align-items: flex-start;
+}
+
+.homepage-workshop-title {
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 400;
+  font-family: "Book Antiqua", serif;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  width: 510px;
+  margin: 0px;
+}
+
+.homepage-workshop-description-top {
+  font-size: 24px;
+  line-height: 33.6px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  width: 517px;
+  margin-bottom: 32px;
+}
+
+.homepage-workshop-description-bottom {
+  padding-right: 46px;
+  font-size: 24px;
+  line-height: 33.6px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  width: 464px;
+  margin-bottom: 0px;
+}
+
+.homepage-workshop-actions {
+  display: inline-flex;
+  width: 187px;
+  height: 48px;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px #6e635e;
+  padding: 0px;
+  background-color: #fcfbf81a;
+}
+
+.homepage-workshop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #f7f8f7;
+  text-decoration: none;
+  padding: 12px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.homepage-workshop-link:hover {
+  color: #f7f8f7;
+}
+
+.homepage-workshop-link:visited {
+  color: #f7f8f7;
+}
+
+.homepage-workshop-link:focus {
+  color: #f7f8f7;
+}
+
+.homepage-workshop-button-icon {
+  display: flex;
 }
